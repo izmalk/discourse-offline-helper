@@ -54,7 +54,7 @@ make run
 > [!TIP]
 > See the [sphinx starter pack's README](https://github.com/canonical/sphinx-docs-starter-pack/blob/main/README.rst) for more information.
 
-### Try it on other doc sets
+## Try it on other doc sets
 
 `doh` takes the following arguments:
 * `-i`, `--instance`: Discourse instance to download from. E.g. `discourse.ubuntu.com`
@@ -64,14 +64,14 @@ make run
 * (Optional) `--navtable`: Path to a .md or .txt file with a custom navigation table. Use this option if you need to restructure your navtable to fulfill the [Documentation requirements](#documentation-requirements).
 * (Optional) `--debug`: Increase log verbosity
 
-### Documentation requirements
+## Documentation requirements
 
 This tool takes into account several common variations between different Discourse sets, but not all. For it to work as smoothly as possible, the documentation set must fulfill a few requirements.
 
 > [!TIP]
 > This tool was intentionally built to be modular and adaptable, so if any of those requirements don't work for you, please submit an issue or contact @avgomes on Mattermost so we can customize the behavior of the tool for you.
 
-#### Navigation table requirements
+### Navigation table requirements
 
 **Requirement**: (mandatory) The navigation table is wrapped in `[details=Navigation]`. 
 ```
@@ -126,10 +126,10 @@ Example of an incorrect Level sequence:
 > * `[Title](http://discourse.instance.com/t/123)`
 > * `[Title](http://discourse.instance.com/some-slug/123)`
 
-#### Other requirements
+### Other requirements
 **Requirement**: (mandatory) The docset should be consistent with **H1 headings**: either all pages have them, or none.
 
-### Polish or troubleshoot your new Sphinx docs
+## Polish or troubleshoot your new Sphinx docs
 
 Once you've run the script and built the HTML docs, you'll probably notice a few things that still need some polishing - maybe some formatting is off or the navigation doesn't show up as expected.
 
