@@ -258,11 +258,13 @@ class SphinxHandler:
                         f.write("reference*/index\n")
                         f.write("explanation*/index\n")
                         f.write("*\n")
+                        f.write("```\n")
                 else:
                     with open(item.filepath.with_suffix('.md'), 'a', encoding='utf-8') as f:
                         f.write(toctree_directives)
                         f.write("*\n")
                         f.write("*/index\n")
+                        f.write("```\n")
 
                 logging.debug(f"Created toctree for {item.filepath}")
 
